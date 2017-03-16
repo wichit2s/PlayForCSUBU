@@ -11,7 +11,7 @@ How to create web application with Java using [play framework](http://www.playfr
 3. xxxx
 4. 555
 <<<<<<< HEAD
-9. Paded Kumwong
+9. [Paded Kumwong](https://github.com/paded)
 =======
 5. mr.Chaiyasit khotsombat
 >>>>>>> 6ebbc2dbb2daae72815eedb222f94f5a4615aaa7
