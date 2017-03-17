@@ -4,7 +4,7 @@ How to create web application with Java using [play framework](http://www.playfr
 ## Project Members
 
 1. [Mr.songsak Wanta](https://github.com/tapgabee)
-2. [salakjit sakseethao](https://github.com/salakjit)
+2. [salakjit sakseethao](https://github.com/salakjits)
 3. [mr.Chaiyasit khotsombat](https://github.com/chaiyasit)
 4. [Sivakorn bupphadee](https://github.com/Sivakorn2540)
 5. [Bank](https://github.com/Bank)
