@@ -9,4 +9,4 @@ How to create web application with Java using [play framework](http://www.playfr
 4. [Sivakorn bupphadee](https://github.com/Sivakorn2540)
 5. [Bank](https://github.com/Bank)
 6. [Paded Kumwong](https://github.com/paded)
-7. [miss Pawinee GIGIE](https://githbu.com/giegie)
+7. [miss Pawinee GIGIE](https://githbu.com/PawineeGP)
