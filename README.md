@@ -10,3 +10,5 @@ How to create web application with Java using [play framework](http://www.playfr
 5. [Bank](https://github.com/beyondkk)
 6. [Paded Kumwong](https://github.com/paded)
 7. [miss Pawinee GIGIE](https://githbu.com/PawineeGP)
+
+PlayFremework JAVAHOME : (https://www.playframework.com/documentation/2.5.x/javaHome)
