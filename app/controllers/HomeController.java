@@ -23,7 +23,8 @@ public class HomeController extends Controller {
         "เมนู B",
         "เมนู C",
         "เมนู D",
-                "เมนู E"
+        "เมนู E",
+        "Memu F"
       };
         return ok(hello.render(menus));
           //.as("text/html");
