@@ -22,7 +22,7 @@ public class HomeController extends Controller {
         "เมนู A",
         "เมนู B",
         "เมนู C",
-        "เมนู D"
+        "เมนู D",
                 "เมนู E"
       };
         return ok(hello.render(menus));
