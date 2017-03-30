@@ -20,7 +20,7 @@ public class HomeController extends Controller {
 
 
         //return ok(index.render("Your new application is ready."));
->>>>>>> e8ca6c447c7b193c76e2bc441ced2925d5b36379
+
       String[] menus = {
         "เมนู A",
         "เมนู B",
