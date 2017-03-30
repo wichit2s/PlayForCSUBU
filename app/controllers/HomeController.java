@@ -34,8 +34,6 @@ public class HomeController extends Controller {
         return ok(hello.render(menus));
 
 
-      };
-        return ok(hello.render(menus));
           //.as("text/html");
 
     }
