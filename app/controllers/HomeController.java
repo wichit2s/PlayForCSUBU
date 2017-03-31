@@ -43,14 +43,11 @@ public class HomeController extends Controller {
       return ok(tang.render()).as("text/html");
     }
 
-<<<<<<< HEAD
     public Result Gigie(){
       return ok(Gigie.render()).as("text/html");
     }
 
 
-
-=======
     public Result got() {
         return ok(got.render());
     }
@@ -64,5 +61,4 @@ public class HomeController extends Controller {
 	public Result bank(){
       return ok(bank.render());
     }
->>>>>>> 72cfe57180b89c536c0d8c2eb20d905d2da38646
 }
