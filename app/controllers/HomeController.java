@@ -17,16 +17,15 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-<<<<<<< HEAD
-=======
+
         //return ok(index.render("Your new application is ready."));
->>>>>>> b0966c9229e675acc90f6333d228c19ae72610d6
+
       String[] menus = {
         "เมนู A",
         "เมนู B",
         "เมนู C",
         "เมนู D",
-<<<<<<< HEAD
+
         "เมนู E"
       };
 
@@ -36,7 +35,7 @@ public class HomeController extends Controller {
     }
     public Result songsak() {
         return ok(songsak.render());
-=======
+
         "เมนู E",
         "Chaiyasit_kh",
         "HiSalakjit"
@@ -57,6 +56,6 @@ public class HomeController extends Controller {
     }
     public Result paded(){
       return ok(paded.render());
->>>>>>> b0966c9229e675acc90f6333d228c19ae72610d6
+
     }
 }
