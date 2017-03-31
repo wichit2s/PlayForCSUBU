@@ -34,5 +34,8 @@ public class HomeController extends Controller {
     public Result paul() {
       return ok(paul.render()).as("text/html");
     }
+    public Result tang() {
+      return ok(tang.render()).as("text/html");
+    }
 
 }
