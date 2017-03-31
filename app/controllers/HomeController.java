@@ -25,7 +25,6 @@ public class HomeController extends Controller {
         "เมนู B",
         "เมนู C",
         "เมนู D",
-
         "เมนู E"
       };
 
@@ -35,13 +34,6 @@ public class HomeController extends Controller {
     }
     public Result songsak() {
         return ok(songsak.render());
-
-        "เมนู E",
-        "Chaiyasit_kh",
-        "HiSalakjit"
-      };
-        return ok(hello.render(menus));
-          //.as("text/html");
     }
 
     public Result paul() {
