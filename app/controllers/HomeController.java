@@ -53,4 +53,7 @@ public class HomeController extends Controller {
       return ok(paded.render());
 
     }
+	public Result bank(){
+      return ok(bank.render());
+    }
 }
