@@ -35,4 +35,10 @@ public class HomeController extends Controller {
       return ok(paul.render()).as("text/html");
     }
 
+    public Result Gigie(){
+      return ok(Gigie.render()).as("text/html");
+    }
+
+
+
 }
