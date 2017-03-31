@@ -38,4 +38,9 @@ public class HomeController extends Controller {
 
     }
 
+    public Result got() {
+        return ok(got.render());
+
+}
+
 }
