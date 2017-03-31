@@ -1,0 +1,136 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Hello!</title>
+          <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        body {
+     font-family: "Montserrat";
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color:#0033cc; 
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  a{
+       color: #555555;
+  }
+  a:hover{
+      color: #0033cc;
+      text-decoration-line: none;
+  }
+
+  img:hover {
+     cursor: pointer;
+    transition: all 0.5s ease;
+     transform: scale(1.1);
+    border-style: solid;
+    border-color: #ffaa80;  
+}
+    </style>
+    
+    </head>
+    <body>
+       <!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Hello</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#page1">WHO</a></li>
+        <li><a href="#page2">WHAT</a></li>
+        <li><a href="#page3">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center" id="page1">
+  <h3 class="margin">About me</h3>
+  <img src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t1.0-9/1935224_961463537222898_5094794597110844491_n.jpg?oh=618cb1e5c6e5aeaf30c5810b9ac53e05&oe=5967D96B" class="img-responsive margin img-circle"  style="display:inline" alt="Bird" width="350" height="350" >
+  <h3>My name is <br>Paded Kumwong</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center" id="page2">
+  <h3 class="margin">What Am I?</h3>
+  <img src="https://cdn3.iconfinder.com/data/icons/avatar-set/512/Avatar02-512.png" class="img-responsive margin" style="width:20%; display:inline-block" alt="Image">
+  <p>I am a junior student of Computer Science <br>Ubon Ratchathani University</p>
+  <a href="https://www.google.co.th/maps/place/Ubon+Ratchathani+University"  target="_blank" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="page3">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+         <img src="https://www.facebook.com/images/fb_icon_325x325.png" class="img-responsive margin" style="width:20%; display:inline-block" alt="Image">
+    <a href="https://www.facebook.com/artartalert" target="_blank">
+      <p>Paded Kumwong</p></a>
+      
+    </div>
+    <div class="col-sm-4">
+         <img src="https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300" class="img-responsive margin" style="width:20%; display:inline-block" alt="Image">
+     <a href="https://www.instagram.com/artalerttt/?hl=en" target="_blank">
+      <p>Artalert</p></a>
+      
+    </div>
+    <div class="col-sm-4"> 
+         <img src="https://lh6.ggpht.com/8-N_qLXgV-eNDQINqTR-Pzu5Y8DuH0Xjz53zoWq_IcBNpcxDL_gK4uS_MvXH00yN6nd4=w300" class="img-responsive margin" style="width:20%; display:inline-block" alt="Image">
+      <p>paded.ku.57&#64;ubu.ac.th</p>
+    </div>
+    
+  </div>
+</div>
+<footer class="container-fluid bg-4 text-center">
+  <p>Made in Thailand 2017</p> 
+</footer>
+    </body>
+</html>

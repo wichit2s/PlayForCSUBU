@@ -41,4 +41,7 @@ public class HomeController extends Controller {
     public Result nueng(){
       return ok(nueng.render());
     }
+    public Result paded(){
+      return ok(paded.render());
+    }
 }
