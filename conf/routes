@@ -4,10 +4,18 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
+<<<<<<< HEAD
 GET     /songsak                    controllers.HomeController.songsak
 
 
 
+=======
+
+GET     /got                           controllers.HomeController.got
+GET     /nueng                           controllers.HomeController.nueng
+GET     /paul                       controllers.HomeController.paul
+GET     /paded                      controllers.HomeController.paded
+>>>>>>> b0966c9229e675acc90f6333d228c19ae72610d6
 
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
