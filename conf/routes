@@ -6,10 +6,10 @@
 GET     /                           controllers.HomeController.index
 
 GET     /got                           controllers.HomeController.got
-=======
+
 GET     /paul                       controllers.HomeController.paul
 
->>>>>>> 4cbe70488b6e6d45c58ba4109b2fbe95aa5cb98c
+#>>>>>>> 4cbe70488b6e6d45c58ba4109b2fbe95aa5cb98c
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
