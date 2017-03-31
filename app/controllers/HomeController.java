@@ -28,7 +28,10 @@ public class HomeController extends Controller {
         "เมนู D",
         "เมนู E",
         "Memu F",
-        "กี้ เอายา เพื่อน","Chaiyasit_kh"
+        "กี้ เอายา เพื่อน",
+        "Chaiyasit_kh",
+        "HiSalakjit"
+
 
       };
         return ok(hello.render(menus));
