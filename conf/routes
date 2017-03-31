@@ -4,10 +4,10 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
-<<<<<<< HEAD
+
 GET     /got                           controllers.HomeController.got
 =======
-GET     /paul                       controllers.HomeController.paul 
+GET     /paul                       controllers.HomeController.paul
 
 >>>>>>> 4cbe70488b6e6d45c58ba4109b2fbe95aa5cb98c
 # An example controller showing how to use dependency injection
