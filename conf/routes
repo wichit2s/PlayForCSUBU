@@ -5,16 +5,16 @@
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
 GET     /paul                       controllers.HomeController.paul
-<<<<<<< HEAD
+
 GET     /Gigie                      controllers.HomeController.Gigie
-=======
+
 GET     /tang                       controllers.HomeController.tang
 GET     /songsak                    controllers.HomeController.songsak
 GET     /got                           controllers.HomeController.got
 GET     /nueng                           controllers.HomeController.nueng
 GET     /paul                       controllers.HomeController.paul
 GET     /paded                      controllers.HomeController.paded
->>>>>>> 72cfe57180b89c536c0d8c2eb20d905d2da38646
+
 
 
 # An example controller showing how to use dependency injection
