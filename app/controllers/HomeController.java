@@ -64,4 +64,7 @@ public class HomeController extends Controller {
     public Result noklek() {
         return ok(noklek.render());
     }
+    public Result bas() {
+        return ok(bas.render());
+    }
 }
