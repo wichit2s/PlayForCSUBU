@@ -1,129 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  	<style>
-  		body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-  		.w3-row-padding img {margin-bottom: 12px}
-  		/* Set the width of the sidebar to 120px */
-  		.w3-sidebar {width: 120px;background: #222;}
-  		/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-  		#main {margin-left: 120px}
-  		/* Remove margins from "page content" on small screens */
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
 
-  	</style>
+      }
+      .im {
+          border-radius: 50%;
+      }
+    </style>
 
     <title>My Fortfolio</title>
   </head>
   <body>
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  	  <!-- Avatar image in top left corner -->
-  	  <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t1.0-9/13872781_1022257794561337_4481857410956859142_n.jpg?oh=98e00e78c81a906a9604a3d4acee3f0c&oe=595ADD6C" style="width:100%">
-  	  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  	    <i class="fa fa-home w3-xxlarge"></i>
-  	    <p>HOME</p>
-  	  </a>
-  	  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  	    <i class="fa fa-user w3-xxlarge"></i>
-  	    <p>ABOUT</p>
-  	  </a>
-  	  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  	    <i class="fa fa-eye w3-xxlarge"></i>
-  	    <p>PHOTOS</p>
-  	  </a>
-  	  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-  	    <i class="fa fa-envelope w3-xxlarge"></i>
-  	    <p>CONTACT</p>
-  	  </a>
-  	</nav>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
 
-  	<!-- Navbar on small screens (Hidden on medium and large screens) -->
-  	<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  	  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-  	    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-  	    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-  	    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-  	    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  	  </div>
-  	</div>
+          <a class="navbar-brand" href="#">Portfolio</a>
+        </div>
 
-  	<!-- Page Content -->
-  	<div class="w3-padding-large" id="main">
-  	  <!-- Header/Home -->
-  	  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-  	    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Got.</h1>
-  	    <h4>Programmer</h4>
-  	    <br>
-  	    <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t34.0-12/13318675_988383167882291_1630707073_n.jpg?oh=4e59865fe0d359b419eba5624060a827&oe=58E83CF3" alt="boy" class="w3-image" width="992" height="1108">
-  	  </header>
+    </nav>
 
-  	  <!-- About Section -->
-  	  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-  	    <!-- <h2 class="w3-text-light-grey">Profile</h2>
-  	    <hr style="width:200px" class="w3-opacity">
-  	    <p>Name: Itthpon Rattanakhan</p><br>
-  	    <p>Address: 220 Khunhan Sisaket Thailand 33150</p><br>
-  	     -->
-  	    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-  	    <p class="w3-wide">Android Developer</p>
-  	    <div class="w3-white">
-  	      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-  	    </div>
-  	    <p class="w3-wide">Web Devaloper</p>
-  	    <div class="w3-white">
-  	      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-  	    </div>
-  	    <p class="w3-wide">Web Design</p>
-  	    <div class="w3-white">
-  	      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
-  	    </div>
-  	    <p class="w3-wide">Video Editor</p>
-  	    <div class="w3-white">
-  	      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
-  	    </div>
-  	    <p class="w3-wide">Photography</p>
-  	    <div class="w3-white">
-  	      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
-  	    </div><br>
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>My Portfolio</h1>
+        <img class="im" src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t1.0-9/13872781_1022257794561337_4481857410956859142_n.jpg?oh=98e00e78c81a906a9604a3d4acee3f0c&oe=595ADD6C" alt="Mountain View" style="width:304px;height:290px;">
+        <br>
+        <h1>I'm Got</h1>
+      </div>
+    </div>
 
-  	  <!-- Portfolio Section -->
-  	  <div class="w3-padding-64 w3-content" id="photos">
-  	    <h2 class="w3-text-light-grey">My Photos</h2>
-  	    <hr style="width:200px" class="w3-opacity">
-
-  	    <!-- Grid for photos -->
-  	    <div class="w3-row-padding" style="margin:0 -16px">
-  	      <div class="w3-half">
-  	        <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t34.0-12/13595574_1007438579310083_749426734_n.jpg?oh=c3344670c8229eba2c155fd35833021d&oe=58E82926" style="width:450px;height:650px;">
-  	        <!-- <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t34.0-12/13318746_988381334549141_1970816791_n.jpg?oh=53ec52b2ca9026517c6bc5defc61cf59&oe=58E82CCF" style="width:450px;height:650px;"> -->
-  	      </div>
-
-  	      <div class="w3-half">
-  	        <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t34.0-12/13329793_988381281215813_593472874_n.jpg?oh=736e02165af595e8dedccff84dc9f383&oe=58E86256" style="width:450px;height:650px;">
-  	        <!-- <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t34.0-12/13565479_1007438589310082_1070536109_n.jpg?oh=657fcc08bf6996ed6d8010c5eb124509&oe=58E92081" style="width:450px;height:650px;"> -->
-  	      </div>
-  	    <!-- End photo grid -->
-  	    </div>
-  	  <!-- End Portfolio Section -->
-  	  </div>
-
-  	  <!-- Contact Section -->
-  	  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-  	    <h2 class="w3-text-light-grey">Contact Me</h2>
-  	    <hr style="width:200px" class="w3-opacity">
-
-  	    <div class="w3-section">
-  	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Sisaket, Thailand</p>
-  	      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +66 54949859</p>
-  	      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: itthiphon.mu.57@gmail.com</p>
-  	    </div>
-  	  </div>
-
-
-  	</div>
+    <div class="container-fluid bg-3 text-center">
+      <h2>My football player</h2><br>
+      <div class="row">
+        <div class="col-sm-3">
+          <h3>Philippe Coutinho</h3>
+          <img src="https://pbs.twimg.com/media/ChToA4uW4AAUMpz.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+          <h3>Jodan Hendosan</h3>
+          <img src="https://pbs.twimg.com/media/Cu5vKUMWIAAv2gy.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+          <h3>Adam Lallana</h3>
+          <img src="https://pbs.twimg.com/media/CsBjc8uXYAIbJSh.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+          <h3>Roberto Firmino</h3>
+          <img src="https://pbs.twimg.com/media/Cu5vKUPWYAQNoYI.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+      </div>
+    </div>
 
   </body>
+</html>
