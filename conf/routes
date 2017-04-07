@@ -4,12 +4,21 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
-
-GET     /got                           controllers.HomeController.got
-
 GET     /paul                       controllers.HomeController.paul
 
-#>>>>>>> 4cbe70488b6e6d45c58ba4109b2fbe95aa5cb98c
+GET     /Gigie                      controllers.HomeController.Gigie
+
+GET     /tang                       controllers.HomeController.tang
+GET     /songsak                    controllers.HomeController.songsak
+GET     /got                           controllers.HomeController.got
+GET     /nueng                           controllers.HomeController.nueng
+GET     /paul                       controllers.HomeController.paul
+GET     /paded                      controllers.HomeController.paded
+GET     /noklek                      controllers.HomeController.noklek
+GET     /bas                      controllers.HomeController.bas
+
+
+
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
