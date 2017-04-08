@@ -61,6 +61,7 @@ public class HomeController extends Controller {
 	public Result bank(){
       return ok(bank.render());
     }
+
     public Result noklek() {
         return ok(noklek.render());
     }
