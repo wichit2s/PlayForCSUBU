@@ -58,14 +58,14 @@ public class HomeController extends Controller {
       return ok(paded.render());
 
     }
-	public Result bank(){
-      return ok(bank.render());
-    }
 
     public Result noklek() {
         return ok(noklek.render());
     }
     public Result bas() {
         return ok(bas.render());
+    }
+    public Result bank(){
+      return ok(bank.render());
     }
 }
