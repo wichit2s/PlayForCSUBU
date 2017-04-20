@@ -31,6 +31,8 @@ POST    /create/:text               controllers.EbeanController.create(text:Stri
 GET     /api/todo/delete/:id        controllers.EbeanController.deleteTodo(id:java.util.UUID)
 GET     /api/todos                  controllers.EbeanController.todos
 
+# firebase
+GET     /firebase                   controllers.FirebaseController.index
 
 
 # An example controller showing how to use dependency injection
