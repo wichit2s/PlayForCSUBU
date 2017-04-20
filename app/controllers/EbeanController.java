@@ -2,6 +2,7 @@ package controllers;
 
 import play.mvc.*;
 import play.Logger; 
+import play.libs.Json;
 
 // form
 import javax.inject.*;
@@ -104,6 +105,12 @@ public class EbeanController extends Controller {
     public Result deleteTodo(UUID id) {
       Todo.find.ref(id).delete();
       return redirect("/");
+    }
+
+    @Transactional
+    public Result todos() {
+      List<Todo> todos = Todo.find.all();
+      return ok(Json.prettyPrint(Json.toJson(todos)));
     }
 
 }

@@ -156,7 +156,7 @@
                       <div class="container">
                         <ul class="listgroup">
                         @models.Todo.find.all().map { t =>
-                        <li class="listgroup-item">@t.text <span class="badge"><a href="/api/todo/delete/@t.id"><i class="fa fa-times" aria-hidden="true"></i></a></span></li>
+                        <li class="listgroup-item">@t.text @@@t.createdDate<span class="badge"><a href="/api/todo/delete/@t.id"><i class="fa fa-times" aria-hidden="true"></i></a></span></li>
                         }
                         </ul>
                       </div>

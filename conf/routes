@@ -30,6 +30,7 @@ GET     /csubu                      controllers.CSUBU.index
 POST    /createForm                 controllers.EbeanController.createFromForm
 POST    /create/:text               controllers.EbeanController.create(text:String)
 GET     /api/todo/delete/:id        controllers.EbeanController.deleteTodo(id:java.util.UUID)
+GET     /api/todos                  controllers.EbeanController.todos
 
 
 
