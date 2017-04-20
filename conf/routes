@@ -15,6 +15,7 @@ GET     /nueng                           controllers.HomeController.nueng
 GET     /paded                      controllers.HomeController.paded
 GET     /noklek                      controllers.HomeController.noklek
 GET     /bas                      controllers.HomeController.bas
+GET     /bank                      controllers.HomeController.bank
 
 # ----- Paul ---------
 GET     /paul                       controllers.HomeController.paul
