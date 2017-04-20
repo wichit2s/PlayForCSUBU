@@ -18,10 +18,10 @@ GET     /bas                      controllers.HomeController.bas
 
 # ----- Paul ---------
 GET     /paul                       controllers.HomeController.paul
-# ตัวอย่างการใช้ Logger
-# วิธีการเรียก http://localhost:9000/gcd/200/350
+
+# http://localhost:9000/gcd/200/350
 GET     /gcd/:a/:b                  controllers.LoggingController.gcd(a: Long, b: Long)
-# หน้าหลักสำหรับ csubu
+
 GET     /csubu                      controllers.CSUBU.index
 
 
