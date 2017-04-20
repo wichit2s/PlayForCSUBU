@@ -27,7 +27,7 @@ public class LoggingController extends Controller {
   static final Logger.ALogger logger = Logger.of(LoggingController.class);
 
   public long หารร่วมมาก(long a, long b) {
-    logger.debug("กำลังหา หารร่วมมาก({}, {})", a, b);
+    logger.info("กำลังหา หารร่วมมาก({}, {})", a, b);
     if (b > a) {
       return หารร่วมมาก(b, a);
     } else if (b == 0) {
@@ -42,7 +42,7 @@ public class LoggingController extends Controller {
      */
     public Result gcd(long a, long b) {
       long r = หารร่วมมาก(a,b);
-      logger.info("{}", gcd.render(a, b, r));
+      logger.error("{}", r); //gcd.render(a, b, r));
         return ok(gcd.render(a, b, r));
     }
 }

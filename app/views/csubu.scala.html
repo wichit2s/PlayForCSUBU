@@ -145,6 +145,24 @@
                       </form>
                     </div>
 
+                    <div class="well"> 
+                      <form class="form" action=@routes.EbeanController.createFromForm method="POST">
+                        <h4>Todos</h4>
+                        <div class="input-group text-center">
+                          <input class="form-control input-lg" placeholder="todo today" type="text" name="text">
+                          <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">Add</button></span>
+                        </div>
+                      </form>
+                      <div class="container">
+                        <ul class="listgroup">
+                        @models.Todo.find.all().map { t =>
+                        <li class="listgroup-item">@t.text @@@t.createdDate<span class="badge"><a href="/api/todo/delete/@t.id"><i class="fa fa-times" aria-hidden="true"></i></a></span></li>
+                        }
+                        </ul>
+                      </div>
+                    </div>
+
+
                     <div class="panel panel-default">
                       <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Bootply Editor &amp; Code Library</h4></div>
                       <div class="panel-body">
