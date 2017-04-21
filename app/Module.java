@@ -10,9 +10,7 @@ import com.google.inject.AbstractModule;
 import java.time.Clock;
 import java.io.*;
 
-import services.ApplicationTimer;
-import services.AtomicCounter;
-import services.Counter;
+import services.*;
 
 /**
  * This class is a Guice module that tells Guice how to bind several
@@ -31,7 +29,6 @@ public class Module extends AbstractModule {
     @Override
     public void configure() {
       logger.warn("calling Module.configure()");
-
       try {
         FileInputStream serviceAccount = new FileInputStream("conf/Java285UBU-65ae46d9c7cb.json");
 
@@ -40,11 +37,13 @@ public class Module extends AbstractModule {
           .setDatabaseUrl("https://java285ubu-2ad55.firebaseio.com/")
           .build();
 
-        FirebaseApp.initializeApp(options, "PlayForCSUBU");
+        //app = FirebaseApp.getInstance();
+        FirebaseApp.initializeApp(options);//, "PlayForCSUBU");
       } catch (Exception ex) {
         logger.error(ex.toString());
       }
 
+      //bind(FirebaseAppInterface.class).to(FirebaseAppSingleton.class);
       // Use the system clock as the default implementation of Clock
       bind(Clock.class).toInstance(Clock.systemDefaultZone());
       // Ask Guice to create an instance of ApplicationTimer when the
