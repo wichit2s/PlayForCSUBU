@@ -30,7 +30,7 @@ import views.html.*;
  *
  */
 @Singleton
-public class FirebaseController extends Controller {
+public class FirebaseController extends Controller implements ValueEventListener {
 
   static final Logger.ALogger logger = Logger.of(EbeanController.class);
 
@@ -40,14 +40,35 @@ public class FirebaseController extends Controller {
   @Inject
   FormFactory formFactory;
 
+  @Override
+  public void onDataChange(DataSnapshot dataSnapshot) {
+    Logger.warn("onDataChange(): ");
+    Object document = dataSnapshot.getValue();
+    Logger.warn("{}", document);
+  }
+
+  @Override
+  public void onCancelled(DatabaseError error) {
+    Logger.warn("onCancelled(): {}", error);
+  }
+
   public Result index() {
     FirebaseAuth defaultAuth = FirebaseAuth.getInstance();
     FirebaseDatabase defaultDatabase = FirebaseDatabase.getInstance();
     Logger.warn("[defaultAuth]: %n{}", defaultAuth);
     Logger.warn("[defaultDatabase]: %n{}", defaultDatabase);
-    DatabaseReference ref = defaultDatabase.getReference();
-    ref.setValue("hello from play framework");
+    DatabaseReference ref = defaultDatabase.getReference("playdb");
+    ref.addListenerForSingleValueEvent(this);
     return ok(firebase.render());
+  }
+
+  public Result nojs() {
+    FirebaseAuth defaultAuth = FirebaseAuth.getInstance();
+    FirebaseDatabase defaultDatabase = FirebaseDatabase.getInstance();
+    Logger.warn("[nojs]: %n{}", defaultDatabase);
+    DatabaseReference ref = defaultDatabase.getReference("playdb");
+    ref.addListenerForSingleValueEvent(this);
+    return ok(csubu.render());
   }
 
 }

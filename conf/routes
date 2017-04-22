@@ -33,6 +33,7 @@ GET     /api/todos                  controllers.EbeanController.todos
 
 # firebase
 GET     /firebase                   controllers.FirebaseController.index
+GET     /nojs                       controllers.FirebaseController.nojs 
 
 
 # An example controller showing how to use dependency injection
