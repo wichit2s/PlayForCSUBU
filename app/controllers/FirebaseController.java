@@ -68,7 +68,7 @@ public class FirebaseController extends Controller implements ValueEventListener
     Logger.warn("[nojs]: %n{}", defaultDatabase);
     DatabaseReference ref = defaultDatabase.getReference("playdb");
     ref.addListenerForSingleValueEvent(this);
-    return ok(csubu.render());
+    return ok(csubu.render(new String[]{"csubugraduation.jpg"}));
   }
 
 }

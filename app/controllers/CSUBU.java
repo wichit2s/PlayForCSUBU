@@ -15,7 +15,9 @@ public class CSUBU extends Controller {
   private Logger.ALogger log = Logger.of(CSUBU.class);
 
   public Result index() {
-    return ok(csubu.render());
+    //String[] images = {"csubugraduation.jpg", "bankprofile.jpg"};
+    String[] images = new File("public/images").list();
+    return ok(csubu.render(images));
   }
 
   public Result upload() {
