@@ -19,6 +19,7 @@ GET     /bank                      controllers.HomeController.bank
 
 # ----- Paul ---------
 GET     /paul                       controllers.HomeController.paul
+POST    /upload                     controllers.CSUBU.upload
 
 # http://localhost:9000/gcd/200/350
 GET     /gcd/:a/:b                  controllers.LoggingController.gcd(a: Long, b: Long)
